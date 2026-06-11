@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f5f1ea;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Outfit', sans-serif;
+}
+
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; }
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: #0a0a0a !important;
+    font-size: 10px !important;
+  }
+
+  /* Ocultar interactivos */
+  a[href*="wa.me"],
+  button,
+  input { display: none !important; }
+
+  /* Reset section breaks — Chrome gestiona mal break-before en secciones anidadas */
+  section {
+    display: block;
+    position: relative;
+    page-break-after: always;
+    break-after: page;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  section:last-of-type {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Reducir padding interior de todas las secciones */
+  section > div {
+    padding: 28px 36px !important;
+  }
+
+  /* Reducir títulos grandes para que quepan en 2 líneas */
+  h1 {
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+    line-height: 1.1 !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Números grandes — reducir */
+  [style*="font-size: 68px"],
+  [style*="font-size: 72px"],
+  [style*="font-size: 80px"] {
+    font-size: 40px !important;
+  }
+
+  [style*="font-size: 52px"],
+  [style*="font-size: 56px"] {
+    font-size: 32px !important;
+  }
+
+  [style*="font-size: 48px"] {
+    font-size: 28px !important;
+  }
+
+  /* Imágenes sin corte */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Sección de ases — no cortar el analizador de imágenes */
+  .ases-section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Grids en print — asegurar que se muestran side by side */
+  [style*="grid-template-columns: 1fr 1fr"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  [style*="grid-template-columns: 1fr 1fr 1fr"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  /* Texto más compacto */
+  p {
+    line-height: 1.5 !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* Gaps reducidos */
+  [style*="gap: '48px'"],
+  [style*="gap: '64px'"] {
+    gap: 20px !important;
+  }
+}

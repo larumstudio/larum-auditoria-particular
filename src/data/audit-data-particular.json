@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "numeroInforme": "IP-0001",
+    "fecha": "Junio 2026",
+    "tipo": "Informe de Percepción · Propietario Privado"
+  },
+  "propietario": {
+    "nombre": "Jose Emilio Herreros Barrios",
+    "email": "joseemiliohb2204@gmail.com"
+  },
+  "caso": {
+    "titulo": "Residencia exclusiva en Villa Morra",
+    "ubicacion": "Villa Morra, Asunción",
+    "precio": 1150000,
+    "precioFormato": "USD 1.150.000",
+    "superficie": "767 m²",
+    "terreno": "905 m²",
+    "dormitorios": 3,
+    "banos": 3,
+    "cocheras": 6,
+    "descripcionPublicada": "Hay propiedades que se compran por sus metros cuadrados. Y hay propiedades que se compran por lo que permiten ser.\n\nEsta residencia en Villa Morra pertenece a la segunda categoría.\n\n905 m² de terreno en una de las direcciones más consolidadas de Asunción. 767 m² construidos que no se distribuyen como una casa — se despliegan como una secuencia de experiencias. Cada espacio tiene una función, y cada función tiene un nivel de acabado que no pide disculpas por el precio.\n\nLa planta baja abre con una sala principal de proporciones generosas, con chimenea, pensada para recibir con autoridad. El escritorio privado —independiente, silencioso— resuelve la necesidad del que trabaja desde casa sin sacrificar la separación entre lo profesional y lo personal. La cocina amoblada y la despensa comunican con un comedor de servicio completamente equipado: la logística invisible que hace que todo funcione sin esfuerzo aparente.\n\nHacia el exterior, el jardín no es un patio. Es una extensión del estilo de vida. Piscina de 40 m², quincho climatizado y amoblado, área de masaje, gym con salida directa a balcón, sauna húmedo, jacuzzi y ducha con hidromasaje. Todo dentro del perímetro propio, todo disponible sin reserva ni desplazamiento. El bienestar como infraestructura, no como excepción.\n\nEn planta alta, dos suites con vestidor y jacuzzi independientes. Balcón en ambas habitaciones. El descanso tiene aquí la misma jerarquía que el resto de la casa.\n\nSeis garajes. Orientación norte. Apto para uso mixto residencial y de oficina."
+  },
+  "situacion": {
+    "diasMercado": 638,
+    "bajadaPrecio": 100000,
+    "precioOriginal": 1250000,
+    "costeMensualOportunidad": 6325,
+    "costoMensualOportunidadFormato": "USD 6.325"
+  },
+  "conLarum": {
+    "diasEstimados": 119,
+    "diasAhorrados": 519,
+    "estado": "Reservado"
+  },
+  "financiero": {
+    "comisionAgencia": 57500,
+    "inversionLarum": 1790,
+    "ahorroNeto": 55710,
+    "costoOportunidadTotal": 132825
+  },
+  "ecosistema": [
+    {
+      "numero": "01",
+      "titulo": "Fotografía editorial de estándar internacional",
+      "descripcion": "No es registrar espacios. Es construir la primera impresión que detiene el scroll de un comprador que está evaluando desde otro país, en segundos, sin posibilidad de visita previa."
+    },
+    {
+      "numero": "02",
+      "titulo": "Vídeo cinematográfico de la propiedad",
+      "descripcion": "Una secuencia de movimiento que transforma metros cuadrados en experiencia. El formato que el comprador internacional exige antes de activar su interés en serio."
+    },
+    {
+      "numero": "03",
+      "titulo": "Tres reels cinematográficos",
+      "descripcion": "Piezas cortas de alto impacto diseñadas para distribución en plataformas internacionales. Cada reel activa un perfil de comprador distinto: el inversor, el familiar, el lifestyle buyer."
+    },
+    {
+      "numero": "04",
+      "titulo": "Narrativa aspiracional en español, inglés y portugués",
+      "descripcion": "El texto que convierte características técnicas en deseo. Redactado para el perfil de comprador que esta propiedad merece — no para el portal de clasificados promedio."
+    },
+    {
+      "numero": "05",
+      "titulo": "Landing page exclusiva de la propiedad",
+      "descripcion": "Un entorno digital propio, independiente de portales, donde el precio se justifica solo. El comprador llega aquí y no tiene nada más que comparar."
+    },
+    {
+      "numero": "06",
+      "titulo": "Dossier de presentación",
+      "descripcion": "El material que el comprador comparte con su asesor, su socio o su familia. Diseñado para circular entre perfiles de alto patrimonio sin perder autoridad en cada reenvío."
+    }
+  ],
+  "narrativaActual": {
+    "titulo": "Lo que ve el comprador hoy",
+    "descripcion": "La descripción publicada tiene buenas intenciones pero habla el idioma equivocado. Lista características donde debería construir deseo. Informa donde debería seducir. Y lo hace en un solo idioma, en un solo portal, para un solo mercado.",
+    "problemas": [
+      "Texto en un solo idioma — el comprador brasileño o argentino no llega",
+      "Lista de características sin jerarquía emocional",
+      "Sin portada que detenga el scroll — la primera imagen decide si el resto existe",
+      "Sin ecosistema propio — depende del algoritmo del portal",
+      "El orden de imágenes no construye una secuencia de deseo"
+    ]
+  },
+  "imagenes": {
+    "hero": "https://larumstudio.com/wp-content/uploads/2026/06/relightpro_highres_wmremove-transformed_1.webp",
+    "antes": [
+      "https://cdn4.fincaraiz.com.co/repo/img/th.outside1200x1200.ca2115f43bd7ad8cd3e64ba9cfedc183a9726462.jpg",
+      "https://cdn4.fincaraiz.com.co/repo/img/th.outside1200x1200.03aeaf0a9ba0f41c45921c5a3443bce8785e5f7a.jpg",
+      "https://cdn4.fincaraiz.com.co/repo/img/th.outside1200x1200.04e3868e7a067dab422e4d1848a3d277d6cc05de.jpg",
+      "https://cdn4.fincaraiz.com.co/repo/img/th.outside1200x1200.91985503cdb738dda15098b8f304752b67a1ce54.jpg"
+    ],
+    "despues": [
+      "https://larumstudio.com/wp-content/uploads/2026/06/wmremove-transformed-3.webp",
+      "https://larumstudio.com/wp-content/uploads/2026/06/relightpro_highres_wmremove-transformed_1.webp",
+      "https://larumstudio.com/wp-content/uploads/2026/06/relightpro_highres_3.webp",
+      "https://larumstudio.com/wp-content/uploads/2026/06/relightpro_highres_wmremove-transformed.webp"
+    ]
+  },
+  "cta": {
+    "titulo": "Análisis de percepción · Sin coste",
+    "descripcion": "Analizamos tu propiedad, te decimos exactamente qué está frenando al comprador correcto y te presentamos el plan de intervención en 15 minutos.",
+    "garantias": [
+      "Sin coste · Sin compromiso",
+      "Respuesta en menos de 24hs",
+      "Análisis específico para tu propiedad",
+      "Enfocado en acortar el tiempo de venta"
+    ]
+  }
+}
