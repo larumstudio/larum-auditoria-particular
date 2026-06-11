@@ -5,38 +5,24 @@ import {
   View,
   Image,
   StyleSheet,
-  Font,
 } from '@react-pdf/renderer';
 import type { AuditDataParticular } from '../types';
 
-// ─── Fuentes ────────────────────────────────────────────────────────────────
-Font.register({
-  family: 'Cormorant',
-  fonts: [
-    { src: 'https://fonts.gstatic.com/s/cormorantgaramond/v22/co3YmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2', fontWeight: 300 },
-    { src: 'https://fonts.gstatic.com/s/cormorantgaramond/v22/co3bmX5slCNuHLi8bLeY9MK7whWMhyjornFLsS2V.woff2', fontWeight: 300, fontStyle: 'italic' },
-  ],
-});
-Font.register({
-  family: 'Outfit',
-  fonts: [
-    { src: 'https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4G-EiAou6Y.woff2', fontWeight: 300 },
-    { src: 'https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4G-EiAou6Y.woff2', fontWeight: 400 },
-    { src: 'https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4C-EiAou6Y.woff2', fontWeight: 500 },
-  ],
-});
+// Fuentes del sistema — siempre disponibles en @react-pdf/renderer
+// Serif: Times-Roman / Times-Bold / Times-Italic
+// Sans:  Helvetica / Helvetica-Bold
 
 // ─── Paleta ──────────────────────────────────────────────────────────────────
 const C = {
-  bg:       '#0a0a0a',
-  bg2:      '#0e0e0e',
-  bg3:      '#111111',
-  gold:     '#c9a96e',
-  goldFade: 'rgba(201,169,110,0.55)',
-  cream:    '#f5f1ea',
-  creamFade:'rgba(245,241,234,0.7)',
-  red:      'rgba(245,100,100,0.6)',
-  border:   'rgba(245,241,234,0.08)',
+  bg:        '#0a0a0a',
+  bg2:       '#0e0e0e',
+  bg3:       '#111111',
+  gold:      '#c9a96e',
+  goldFade:  'rgba(201,169,110,0.55)',
+  cream:     '#f5f1ea',
+  creamFade: 'rgba(245,241,234,0.7)',
+  red:       'rgba(245,100,100,0.6)',
+  border:    'rgba(245,241,234,0.08)',
   borderGold:'rgba(201,169,110,0.25)',
 };
 
@@ -44,7 +30,7 @@ const C = {
 const s = StyleSheet.create({
   page: {
     backgroundColor: C.bg,
-    fontFamily: 'Outfit',
+    fontFamily: 'Helvetica',
     color: C.cream,
   },
   // Layout
@@ -52,21 +38,21 @@ const s = StyleSheet.create({
   col: { flexDirection: 'column' },
   half: { width: '50%' },
   third: { width: '33.33%' },
-  // Tipografía display
-  serif_xl: { fontFamily: 'Cormorant', fontSize: 44, fontWeight: 300, color: C.cream, lineHeight: 1.05 },
-  serif_lg: { fontFamily: 'Cormorant', fontSize: 32, fontWeight: 300, color: C.cream, lineHeight: 1.1 },
-  serif_md: { fontFamily: 'Cormorant', fontSize: 22, fontWeight: 300, color: C.cream, lineHeight: 1.15 },
-  serif_sm: { fontFamily: 'Cormorant', fontSize: 16, fontWeight: 300, color: C.cream },
-  serif_gold_xl: { fontFamily: 'Cormorant', fontSize: 52, fontWeight: 300, color: C.gold, lineHeight: 1 },
-  serif_gold_lg: { fontFamily: 'Cormorant', fontSize: 36, fontWeight: 300, color: C.gold, lineHeight: 1 },
-  serif_gold_md: { fontFamily: 'Cormorant', fontSize: 24, fontWeight: 300, color: C.gold, lineHeight: 1 },
-  serif_italic: { fontFamily: 'Cormorant', fontSize: 14, fontWeight: 300, fontStyle: 'italic', color: C.cream, lineHeight: 1.6 },
-  // Tipografía texto
-  label: { fontFamily: 'Outfit', fontSize: 7, fontWeight: 300, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(201,169,110,0.7)' },
-  label_dim: { fontFamily: 'Outfit', fontSize: 7, fontWeight: 300, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(245,241,234,0.4)' },
-  body: { fontFamily: 'Outfit', fontSize: 10, fontWeight: 300, color: C.cream, lineHeight: 1.8 },
-  body_sm: { fontFamily: 'Outfit', fontSize: 9, fontWeight: 300, color: C.creamFade, lineHeight: 1.7 },
-  caption: { fontFamily: 'Outfit', fontSize: 7, fontWeight: 300, color: 'rgba(245,241,234,0.55)', letterSpacing: 1.5, textTransform: 'uppercase' },
+  // Tipografía display — Times como serif elegante
+  serif_xl: { fontFamily: 'Times-Roman', fontSize: 44, color: C.cream, lineHeight: 1.05 },
+  serif_lg: { fontFamily: 'Times-Roman', fontSize: 32, color: C.cream, lineHeight: 1.1 },
+  serif_md: { fontFamily: 'Times-Roman', fontSize: 22, color: C.cream, lineHeight: 1.15 },
+  serif_sm: { fontFamily: 'Times-Roman', fontSize: 16, color: C.cream },
+  serif_gold_xl: { fontFamily: 'Times-Roman', fontSize: 52, color: C.gold, lineHeight: 1 },
+  serif_gold_lg: { fontFamily: 'Times-Roman', fontSize: 36, color: C.gold, lineHeight: 1 },
+  serif_gold_md: { fontFamily: 'Times-Roman', fontSize: 24, color: C.gold, lineHeight: 1 },
+  serif_italic: { fontFamily: 'Times-Italic', fontSize: 14, color: C.cream, lineHeight: 1.6 },
+  // Tipografía texto — Helvetica
+  label: { fontFamily: 'Helvetica', fontSize: 7, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(201,169,110,0.7)' },
+  label_dim: { fontFamily: 'Helvetica', fontSize: 7, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(245,241,234,0.4)' },
+  body: { fontFamily: 'Helvetica', fontSize: 10, color: C.cream, lineHeight: 1.8 },
+  body_sm: { fontFamily: 'Helvetica', fontSize: 9, color: C.creamFade, lineHeight: 1.7 },
+  caption: { fontFamily: 'Helvetica', fontSize: 7, color: 'rgba(245,241,234,0.55)', letterSpacing: 1.5, textTransform: 'uppercase' },
   // Decoración
   divider_gold: { width: 36, height: 1, backgroundColor: C.gold, opacity: 0.4, marginVertical: 16 },
   divider: { width: '100%', height: 1, backgroundColor: 'rgba(245,241,234,0.07)', marginVertical: 12 },
