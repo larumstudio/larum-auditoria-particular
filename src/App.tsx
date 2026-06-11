@@ -9,6 +9,7 @@ import S05ElEcosistema from './components/S05_ElEcosistema';
 import S06LaCuenta from './components/S06_LaCuenta';
 import S07Cierre from './components/S07_Cierre';
 import Ases from './components/S_Ases';
+import DownloadPDFButton from './components/DownloadPDFButton';
 
 const data = auditData as AuditDataParticular;
 
@@ -24,6 +25,7 @@ export default function App() {
       <S06LaCuenta data={data} />
       <Ases data={data} />
       <S07Cierre data={data} />
+      <DownloadPDFButton data={data} />
     </div>
   );
 }

@@ -14,4 +14,13 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  server: {
+    proxy: {
+      '/wp-content': {
+        target: 'https://larumstudio.com',
+        changeOrigin: true,
+        secure: true,
+      }
+    }
+  }
 });
