@@ -356,7 +356,6 @@ export function WhatsAppFijo() {
 export default function Ases({ data }: { data: AuditDataParticular }) {
   const [asesorOn, setAsesorOn] = useState(false);
   const isMobile = useIsMobile();
-  const isMobile = useIsMobile();
   return (
     <>
       <ContadorVivo diasMercado={data.situacion.diasMercado} costeMensual={data.situacion.costeMensualOportunidad} />
