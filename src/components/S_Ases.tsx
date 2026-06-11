@@ -31,6 +31,7 @@ const sans = (sz: number, c = 'rgba(245,241,234,0.82)', w = 300) => ({
 
 /* ── 1. CONTADOR EN VIVO ─────────────────────────────────────── */
 export function ContadorVivo({ diasMercado, costeMensual }: { diasMercado: number; costeMensual: number }) {
+  const isMobile = useIsMobile();
   const [seg, setSeg] = useState(0);
   useEffect(() => { const t = setInterval(() => setSeg(s => s + 1), 1000); return () => clearInterval(t); }, []);
   const ps = (costeMensual * 12) / (365 * 24 * 3600);
@@ -65,6 +66,7 @@ export function ContadorVivo({ diasMercado, costeMensual }: { diasMercado: numbe
 
 /* ── 2. CALCULADORA SLIDER ───────────────────────────────────── */
 export function CalculadoraSlider({ precio, inversionLarum }: { precio: number; inversionLarum: number }) {
+  const isMobile = useIsMobile();
   const [pf, setPf] = useState(precio);
   const com = Math.round(pf * 0.05);
   const ahorro = com - inversionLarum;
@@ -105,6 +107,7 @@ export function CalculadoraSlider({ precio, inversionLarum }: { precio: number; 
 interface ImgItem { url: string; analisis: string; cargando: boolean; }
 
 export function AnalizadorImagenes() {
+  const isMobile = useIsMobile();
   const initUrls = [
     'https://cdn4.fincaraiz.com.co/repo/img/th.outside1200x1200.ca2115f43bd7ad8cd3e64ba9cfedc183a9726462.jpg',
     'https://larumstudio.com/wp-content/uploads/2026/06/wmremove-transformed-3.webp',
@@ -267,6 +270,7 @@ function Slider({ antes, despues, titulo }: { antes: string; despues: string; ti
 }
 
 export function ComparadoresBA({ imagenes }: { imagenes: { antes: string[]; despues: string[] } }) {
+  const isMobile = useIsMobile();
   const pares = [
     { t: 'Fachada · Exterior', a: imagenes.antes[0], d: imagenes.despues[0] },
     { t: 'Sala principal · Chimenea', a: imagenes.antes[1], d: imagenes.despues[1] },
@@ -288,6 +292,7 @@ export function ComparadoresBA({ imagenes }: { imagenes: { antes: string[]; desp
 interface Msg { rol: 'user' | 'assistant'; txt: string; }
 
 export function AsesorIA({ data, activo }: { data: AuditDataParticular; activo: boolean }) {
+  const isMobile = useIsMobile();
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [inp, setInp] = useState('');
   const [busy, setBusy] = useState(false);
