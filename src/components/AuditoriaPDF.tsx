@@ -65,7 +65,7 @@ const s = StyleSheet.create({
 // ─── Componentes pequeños ────────────────────────────────────────────────────
 const Logo = () => (
   <View style={{ marginBottom: 48 }}>
-    <Text style={{ fontFamily: 'Cormorant', fontSize: 20, fontWeight: 300, letterSpacing: 8, color: C.cream }}>LARUM</Text>
+    <Text style={{ fontFamily: 'Times-Roman', fontSize: 20, fontWeight: 300, letterSpacing: 8, color: C.cream }}>LARUM</Text>
     <Text style={[s.caption, { marginTop: 2, letterSpacing: 6 }]}>STUDIO</Text>
   </View>
 );
