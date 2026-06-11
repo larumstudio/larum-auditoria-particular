@@ -134,7 +134,7 @@ function PageCover({ data }: { data: AuditDataParticular }) {
               </View>
             </View>
           </View>
-          <Text style={{ position: 'absolute', top: 20, right: 20, fontFamily: 'Outfit', fontSize: 7, letterSpacing: 3, color: 'rgba(201,169,110,0.6)', textTransform: 'uppercase' }}>
+          <Text style={{ position: 'absolute', top: 20, right: 20, fontFamily: 'Helvetica', fontSize: 7, letterSpacing: 3, color: 'rgba(201,169,110,0.6)', textTransform: 'uppercase' }}>
             LARUMSTUDIO.COM
           </Text>
         </View>
@@ -248,7 +248,7 @@ function PageAntesYDespues({ data }: { data: AuditDataParticular }) {
               <View key={i} style={{ flex: 1, position: 'relative' }}>
                 <Image src={src} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.7 }} />
                 {i === 0 && (
-                  <Text style={{ position: 'absolute', bottom: 8, left: 10, fontFamily: 'Outfit', fontSize: 7, color: C.cream, letterSpacing: 2, textTransform: 'uppercase' }}>
+                  <Text style={{ position: 'absolute', bottom: 8, left: 10, fontFamily: 'Helvetica', fontSize: 7, color: C.cream, letterSpacing: 2, textTransform: 'uppercase' }}>
                     PORTADA ACTUAL
                   </Text>
                 )}
@@ -267,7 +267,7 @@ function PageAntesYDespues({ data }: { data: AuditDataParticular }) {
               <View key={i} style={{ flex: 1, position: 'relative' }}>
                 <Image src={src} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 {i === 0 && (
-                  <Text style={{ position: 'absolute', bottom: 8, left: 10, fontFamily: 'Outfit', fontSize: 7, color: C.gold, letterSpacing: 2, textTransform: 'uppercase' }}>
+                  <Text style={{ position: 'absolute', bottom: 8, left: 10, fontFamily: 'Helvetica', fontSize: 7, color: C.gold, letterSpacing: 2, textTransform: 'uppercase' }}>
                     PORTADA EDITORIAL
                   </Text>
                 )}
